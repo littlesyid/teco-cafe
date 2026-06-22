@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teco - Profil Cafe</title>
-    <!-- Menggunakan Tailwind CSS untuk utilitas desain minimalis dan responsif -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* CSS Kustom Khusus untuk Slider Hero & Slider Menu */
         .carousel-container {
             position: relative;
             overflow: hidden;
             width: 100%;
-            height: 50vh; /* Tinggi menyesuaikan layar HP */
+            height: 50vh;
             max-height: 500px;
             background-color: #f3f4f6;
         }
@@ -26,20 +24,13 @@
         .carousel-slide {
             min-width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            text-align: center;
         }
 
-        /* Style Slider Menu */
         .menu-slider-container {
             position: relative;
             overflow: hidden;
             width: 100%;
-            max-width: 380px; /* Ukuran proporsional kartu produk di HP/Desktop */
+            max-width: 380px;
             margin: 0 auto;
         }
 
@@ -48,54 +39,44 @@
             transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
-        /* Memastikan setiap item menu menjadi satu slide penuh */
         .menu-slide {
             min-width: 100%;
             box-sizing: border-box;
-            padding: 16px;
+            padding: 10px;
         }
     </style>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased">
 
-    <!-- HEADER SECTION -->
     <header class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
         <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between md:justify-start gap-4">
             <div class="flex items-center gap-3">
-                <!-- Logo Cafe Asli -->
-                <img src="images/logo-teco.png" alt="Logo Teco" class="w-12 h-12 object-contain rounded">
-                <!-- Nama Cafe -->
+                <img src="Teco-Edit.png" alt="Logo Teco" class="w-10 h-10 object-cover rounded border border-gray-200">
                 <h1 class="text-xl font-bold tracking-widest uppercase text-black">Teco</h1>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION (IMAGE SLIDER) -->
     <section class="carousel-container">
         <div class="carousel-track" id="carouselTrack">
-            <!-- Slide 1 -->
-            <div class="carousel-slide p-0">
-                <img src="images/hero-1.jpg" alt="Suasana Cafe Teco" class="w-full h-full object-cover">
+            <div class="carousel-slide">
+                <img src="hero1.jpg" alt="Suasana Teco Utama" class="w-full h-full object-cover">
             </div>
-            <!-- Slide 2 -->
-            <div class="carousel-slide p-0">
-                <img src="images/hero-2.jpg" alt="Sudut Estetik Ruang Seduh" class="w-full h-full object-cover">
+            <div class="carousel-slide">
+                <img src="hero2.jpg" alt="Sudut Estetik Ruang Seduh" class="w-full h-full object-cover">
             </div>
-            <!-- Slide 3 -->
-            <div class="carousel-slide p-0">
-                <img src="images/hero-3.jpg" alt="Momen Santai Sore di Teco" class="w-full h-full object-cover">
+            <div class="carousel-slide">
+                <img src="hero3.jpg" alt="Momen Santai Sore di Teco" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
 
-    <!-- TENTANG KAMI SECTION -->
     <section class="max-w-5xl mx-auto px-6 py-16 border-b border-gray-100">
         <div class="text-center mb-10">
             <h2 class="text-2xl font-bold tracking-widest uppercase text-black">Tentang Kami</h2>
             <div class="w-12 h-1 bg-black mx-auto mt-4"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <!-- Sisi Cerita -->
             <div class="space-y-4 text-center md:text-left">
                 <p class="text-gray-600 leading-relaxed text-sm md:text-base">
                     Teco hadir sebagai ruang temu sederhana yang mengedepankan ketenangan dan kenyamanan. Kami percaya bahwa secangkir minuman hangat dan atmosfer yang tepat mampu memicu ide-ide segar serta obrolan yang menyenangkan.
@@ -104,14 +85,12 @@
                     Dengan komitmen untuk terus tumbuh bersama komunitas, Teco menyajikan pilihan rasa terbaik dalam suasana ruang minimalis modern yang ramah untuk siapa saja yang ingin sekadar bersantai maupun fokus bekerja.
                 </p>
             </div>
-            <!-- Kolon Kanan: Foto Tentang Kami Asli -->
-            <img src="images/tentang-kami.jpg" 
-                 alt="Suasana Estetik Cafe Teco" 
-                 class="w-full aspect-square object-cover rounded-xl shadow-md transition-transform duration-500 hover:scale-[1.02]">
+            <div class="w-full h-64 md:h-80 bg-gray-50 border border-gray-100 rounded-md overflow-hidden">
+                <img src="tentang-kami.jpg" alt="Suasana Cafe Teco" class="w-full h-full object-cover">
+            </div>
         </div>
     </section>
 
-    <!-- MENU KAMI SECTION (SINGLE SLIDER INTERACTIVE) -->
     <section class="max-w-5xl mx-auto px-6 py-16 border-b border-gray-100">
         <div class="text-center mb-6">
             <h2 class="text-2xl font-bold tracking-widest uppercase text-black">Menu Kami</h2>
@@ -119,86 +98,89 @@
             <p class="text-xs text-gray-400 mt-3 uppercase tracking-wider">Gunakan panah atau geser kartu menu</p>
         </div>
 
-        <!-- Slider Main Wrapper -->
         <div class="relative max-w-sm mx-auto flex items-center justify-center">
-            
-            <!-- Tombol Panah Kiri -->
             <button id="prevMenuBtn" class="absolute -left-4 md:-left-12 z-20 bg-white border border-gray-200 text-gray-800 p-3 rounded-full shadow-sm hover:bg-black hover:text-white transition duration-300 focus:outline-none" aria-label="Menu Sebelumnya">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
             </button>
 
-            <!-- Container Slider Menu -->
             <div class="menu-slider-container">
                 <div class="menu-track" id="menuTrack">
-
-                    <!-- Item Menu 1 -->
-                    <div class="menu-slide flex flex-col items-center group">
-                        <img src="images/menu1.png" alt="Kopi Susu Teco" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Kopi Susu Teco</h3>
+                    
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu1.jpg" alt="Kopi Susu Teco" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Kopi Susu Teco</h3>
                     </div>
 
-                    <!-- Menu Item 2 -->
-                    <div class="menu-slide flex flex-col items-center group">
-                        <img src="images/menu2.png" alt="Matcha Latte" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Matcha Latte</h3>
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu2.jpg" alt="Matcha Latte" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Matcha Latte</h3>
                     </div>
 
-                    <!-- Menu Item 3 -->
-                    <div class="menu-slide flex flex-col items-center group">
-                        <img src="images/menu3.png" alt="Americano" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Americano</h3>
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu3.jpg" alt="Americano" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Americano</h3>
                     </div>
 
-                    <!-- Menu Item 4 -->
-                    <div class="menu-slide flex flex-col items-center group">
-                        <img src="images/menu4.png" alt="V60 Manual Brew" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">V60 Manual Brew</h3>
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu4.jpg" alt="V60 Manual Brew" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">V60 Manual Brew</h3>
                     </div>
 
-                    <!-- Menu Item 6 -->
-                    <div class="menu-slide flex flex-col items-center group">
-                        <img src="images/menu6.png" alt="Lychee Tea" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Lychee Tea</h3>
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu5.jpg" alt="Choco Signature" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Choco Signature</h3>
                     </div>
 
-                    <!-- Menu Item 7 -->
-                    <div class="menu-slide flex flex-col items-center group">
-                        <img src="images/menu7.png" alt="French Fries" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">French Fries</h3>
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu6.jpg" alt="Lychee Tea" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Lychee Tea</h3>
                     </div>
 
-                    <!-- Menu Item 8 -->
-                    <div class="menu-slide flex flex-col items-center group">
-                        <img src="images/menu8.png" alt="Teco Platter" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Teco Platter</h3>
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu7.jpg" alt="French Fries" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">French Fries</h3>
+                    </div>
+
+                    <div class="menu-slide flex flex-col items-center">
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu8.jpg" alt="Teco Platter" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Teco Platter</h3>
                     </div>
 
                 </div>
             </div>
 
-            <!-- Tombol Panah Kanan -->
             <button id="nextMenuBtn" class="absolute -right-4 md:-right-12 z-20 bg-white border border-gray-200 text-gray-800 p-3 rounded-full shadow-sm hover:bg-black hover:text-white transition duration-300 focus:outline-none" aria-label="Menu Selanjutnya">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
         </div>
 
-        <!-- Indikator Posisi Menu -->
-        <div class="flex justify-center gap-1.5 mt-6" id="menuDotsContainer">
-            <!-- Dots akan dibuat secara dinamis lewat JS -->
-        </div>
+        <div class="flex justify-center gap-1.5 mt-6" id="menuDotsContainer"></div>
     </section>
 
-    <!-- SECTION HUBUNGI KAMI -->
     <section class="max-w-5xl mx-auto px-6 py-16 text-center">
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-3xl font-bold tracking-widest uppercase text-black">Hubungi Kami</h2>
             <div class="w-16 h-1 bg-black mx-auto mt-4"></div>
         </div>
     
-        <!-- Container Tombol Kontak -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             
-            <!-- Tombol WhatsApp -->
             <a href="https://wa.me/6283144202166" target="_blank" class="flex items-center gap-4 p-5 border border-gray-200 rounded-xl hover:shadow-md transition-all bg-white text-left group">
                 <div class="flex items-center justify-center w-8 h-8 flex-shrink-0 text-slate-800">
                     <svg class="w-7 h-7 transition-transform group-hover:scale-110 duration-300" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -211,13 +193,10 @@
                 </div>
             </a>
     
-            <!-- Tombol Instagram -->
             <a href="https://instagram.com/tecocafe.id" target="_blank" class="flex items-center gap-4 p-5 border border-gray-200 rounded-xl hover:shadow-md transition-all bg-white text-left group">
                 <div class="flex items-center justify-center w-8 h-8 flex-shrink-0 text-slate-800">
-                    <svg class="w-7 h-7 transition-transform group-hover:scale-110 duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    <svg class="w-7 h-7 transition-transform group-hover:scale-110 duration-300" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 0.013-3.583 0.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center">
@@ -229,7 +208,6 @@
         </div>
     </section>
 
-    <!-- FOOTER SECTION (SPONSORS & COPYRIGHT) -->
     <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12 px-6">
         <div class="max-w-3xl mx-auto flex flex-col items-center">
             
@@ -237,18 +215,13 @@
                 Supported by PLTU Tubanan & DPRD Kudus
             </p>
             
-            <!-- Logo Placeholders -->
             <div class="flex flex-row items-center justify-center gap-6 md:gap-10">
-                <!-- Logo PLTU Tubanan Asli -->
-                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-4 rounded-md transition-transform hover:scale-105 duration-300">
-                    <img src="images/logo-pltu.png" alt="Logo PLTU Tubanan" class="max-w-full max-h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span class="hidden text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo PLTU<br>Tubanan</span>
+                <div class="w-32 h-32 md:w-44 md:h-44 bg-transparent flex items-center justify-center p-2 transition-transform hover:scale-105 duration-300 overflow-hidden">
+                    <img src="logo-pltu.png" alt="Logo PLTU Tubanan" class="max-w-full max-h-full object-contain">
                 </div>
 
-                <!-- Logo DPRD Kudus Asli -->
-                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-4 rounded-md transition-transform hover:scale-105 duration-300">
-                    <img src="images/logo-dprd.png" alt="Logo DPRD Kudus" class="max-w-full max-h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span class="hidden text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo DPRD<br>Kudus</span>
+                <div class="w-32 h-32 md:w-44 md:h-44 bg-transparent flex items-center justify-center p-2 transition-transform hover:scale-105 duration-300 overflow-hidden">
+                    <img src="logo-dprd.png" alt="Logo DPRD Kudus" class="max-w-full max-h-full object-contain">
                 </div>
             </div>
 
@@ -258,12 +231,9 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT UNTUK LOGIKA SLIDER OTOMATIS & SLIDER INTERAKTIF MENU -->
     <script>
-        // Update tahun copyright otomatis
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // 1. LOGIKA SLIDER HERO (OTOMATIS)
         const heroTrack = document.getElementById('carouselTrack');
         const heroSlides = document.querySelectorAll('#carouselTrack .carousel-slide');
         let currentHeroIndex = 0;
@@ -278,8 +248,6 @@
         }
         setInterval(moveToNextHeroSlide, 4000);
 
-
-        // 2. LOGIKA SLIDER MENU INTERAKTIF (1 PRODUK DENGAN NAVIGASI)
         const menuTrack = document.getElementById('menuTrack');
         const menuSlides = document.querySelectorAll('#menuTrack .menu-slide');
         const prevMenuBtn = document.getElementById('prevMenuBtn');
@@ -289,7 +257,6 @@
         let currentMenuIndex = 0;
         const totalMenuSlides = menuSlides.length;
 
-        // Inisialisasi Dots / Indikator Lingkaran Kecil di bawah
         for (let i = 0; i < totalMenuSlides; i++) {
             const dot = document.createElement('button');
             dot.classList.add('w-2', 'h-2', 'rounded-full', 'bg-gray-200', 'transition-all', 'duration-300', 'focus:outline-none');
@@ -297,9 +264,7 @@
                 dot.classList.replace('bg-gray-200', 'bg-black');
                 dot.classList.add('w-4');
             }
-            dot.addEventListener('click', () => {
-                goToMenuIndex(i);
-            });
+            dot.addEventListener('click', () => { goToMenuIndex(i); });
             menuDotsContainer.appendChild(dot);
         }
 
@@ -307,7 +272,6 @@
 
         function updateMenuSlider() {
             menuTrack.style.transform = `translateX(-${currentMenuIndex * 100}%)`;
-            
             dots.forEach((dot, index) => {
                 if (index === currentMenuIndex) {
                     dot.classList.replace('bg-gray-200', 'bg-black');
@@ -326,21 +290,16 @@
 
         nextMenuBtn.addEventListener('click', () => {
             currentMenuIndex++;
-            if (currentMenuIndex >= totalMenuSlides) {
-                currentMenuIndex = 0;
-            }
+            if (currentMenuIndex >= totalMenuSlides) { currentMenuIndex = 0; }
             updateMenuSlider();
         });
 
         prevMenuBtn.addEventListener('click', () => {
             currentMenuIndex--;
-            if (currentMenuIndex < 0) {
-                currentMenuIndex = totalMenuSlides - 1;
-            }
+            if (currentMenuIndex < 0) { currentMenuIndex = totalMenuSlides - 1; }
             updateMenuSlider();
         });
 
-        // Dukungan usap layar (Touch/Swipe) untuk perangkat seluler
         let startX = 0;
         let isSwiping = false;
 
@@ -355,16 +314,13 @@
             if (diffX < -50) {
                 nextMenuBtn.click();
                 isSwiping = false;
-            }
-            else if (diffX > 50) {
+            } else if (diffX > 50) {
                 prevMenuBtn.click();
                 isSwiping = false;
             }
         });
 
-        menuTrack.addEventListener('touchend', () => {
-            isSwiping = false;
-        });
+        menuTrack.addEventListener('touchend', () => { isSwiping = false; });
     </script>
 </body>
 </html>
