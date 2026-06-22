@@ -26,18 +26,7 @@
         .carousel-slide {
             min-width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            text-align: center;
         }
-
-        /* Varian warna placeholder agar terlihat bergeser */
-        .slide-1 { background-color: #e5e7eb; }
-        .slide-2 { background-color: #d1d5db; }
-        .slide-3 { background-color: #9ca3af; color: white !important; }
 
         /* Style Slider Menu */
         .menu-slider-container {
@@ -66,36 +55,28 @@
     <header class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
         <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between md:justify-start gap-4">
             <div class="flex items-center gap-3">
-                <!-- Placeholder Logo 1:1 -->
-                <div class="w-10 h-10 bg-gray-900 flex items-center justify-center rounded text-[9px] text-gray-300 font-bold tracking-widest border border-gray-800">
-                    TECO
-                </div>
+                <!-- Logo Menggunakan File Teco-Edit.png -->
+                <img src="Teco-Edit.png" alt="Logo Teco" class="w-10 h-10 object-cover rounded border border-gray-200">
                 <!-- Nama Cafe -->
                 <h1 class="text-xl font-bold tracking-widest uppercase text-black">Teco</h1>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION (IMAGE SLIDER) -->
+    <!-- HERO SECTION (IMAGE SLIDER OTOMATIS) -->
     <section class="carousel-container">
         <div class="carousel-track" id="carouselTrack">
             <!-- Slide 1 -->
-            <div class="carousel-slide slide-1 text-gray-700">
-                <svg class="w-16 h-16 mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <h2 class="text-lg md:text-xl font-medium tracking-wide px-4">Foto Suasana Teco Utama</h2>
-                <p class="text-xs mt-2 opacity-75">(Otomatis Bergeser)</p>
+            <div class="carousel-slide">
+                <img src="hero1.jpg" alt="Suasana Teco Utama" class="w-full h-full object-cover">
             </div>
             <!-- Slide 2 -->
-            <div class="carousel-slide slide-2 text-gray-800">
-                <svg class="w-16 h-16 mb-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <h2 class="text-lg md:text-xl font-medium tracking-wide px-4">Sudut Estetik Ruang Seduh</h2>
-                <p class="text-xs mt-2 opacity-75">(Otomatis Bergeser)</p>
+            <div class="carousel-slide">
+                <img src="hero2.jpg" alt="Sudut Estetik Ruang Seduh" class="w-full h-full object-cover">
             </div>
             <!-- Slide 3 -->
-            <div class="carousel-slide slide-3 text-white">
-                <svg class="w-16 h-16 mb-4 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <h2 class="text-lg md:text-xl font-medium tracking-wide px-4">Momen Santai Sore di Teco</h2>
-                <p class="text-xs mt-2 opacity-90">(Otomatis Bergeser)</p>
+            <div class="carousel-slide">
+                <img src="hero3.jpg" alt="Momen Santai Sore di Teco" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -116,10 +97,9 @@
                     Dengan komitmen untuk terus tumbuh bersama komunitas, Teco menyajikan pilihan rasa terbaik dalam suasana ruang minimalis modern yang ramah untuk siapa saja yang ingin sekadar bersantai maupun fokus bekerja.
                 </p>
             </div>
-            <!-- Sisi Placeholder Foto Tentang Kami -->
-            <div class="w-full h-64 md:h-80 bg-gray-100 border border-gray-200 rounded-md flex flex-col items-center justify-center p-4 text-center">
-                <svg class="w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                <span class="text-xs text-gray-400 uppercase tracking-widest font-medium">Foto Suasana Cafe Teco</span>
+            <!-- Sisi Foto Tentang Kami -->
+            <div class="w-full h-64 md:h-80 bg-gray-50 border border-gray-100 rounded-md overflow-hidden">
+                <img src="tentang-kami.jpg" alt="Suasana Cafe Teco" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -146,64 +126,64 @@
                     
                     <!-- Menu Item 1 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO KOPI SUSU TECO</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu1.jpg" alt="Kopi Susu Teco" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Kopi Susu Teco</h3>
                     </div>
 
                     <!-- Menu Item 2 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO MATCHA LATTE</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu2.jpg" alt="Matcha Latte" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Matcha Latte</h3>
                     </div>
 
                     <!-- Menu Item 3 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO AMERICANO</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu3.jpg" alt="Americano" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Americano</h3>
                     </div>
 
                     <!-- Menu Item 4 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO V60 MANUAL BREW</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu4.jpg" alt="V60 Manual Brew" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">V60 Manual Brew</h3>
                     </div>
 
                     <!-- Menu Item 5 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO CHOCO SIGNATURE</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu5.jpg" alt="Choco Signature" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Choco Signature</h3>
                     </div>
 
                     <!-- Menu Item 6 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO LYCHEE TEA</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu6.jpg" alt="Lychee Tea" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Lychee Tea</h3>
                     </div>
 
                     <!-- Menu Item 7 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO FRENCH FRIES</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu7.jpg" alt="French Fries" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">French Fries</h3>
                     </div>
 
                     <!-- Menu Item 8 -->
                     <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO TECO PLATTER</span>
+                        <div class="w-full aspect-square bg-gray-50 rounded-lg border border-gray-100 mb-4 shadow-inner overflow-hidden">
+                            <img src="menu8.jpg" alt="Teco Platter" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Teco Platter</h3>
                     </div>
@@ -218,9 +198,7 @@
         </div>
 
         <!-- Indikator Posisi Menu -->
-        <div class="flex justify-center gap-1.5 mt-6" id="menuDotsContainer">
-            <!-- Dots akan dibuat secara dinamis lewat JS -->
-        </div>
+        <div class="flex justify-center gap-1.5 mt-6" id="menuDotsContainer"></div>
     </section>
 
     <!-- SECTION HUBUNGI KAMI / SOCIAL MEDIA -->
@@ -263,16 +241,16 @@
                 Supported by PLTU Tubanan & DPRD Kudus
             </p>
             
-            <!-- Logo Placeholders -->
+            <!-- Logo Sponsors Resmi -->
             <div class="flex flex-row items-center justify-center gap-6 md:gap-10">
-                <!-- Placeholder Logo PLTU Tubanan -->
-                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-2 text-center rounded-md transition-transform hover:scale-105 duration-300">
-                    <span class="text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo PLTU<br>Tubanan</span>
+                <!-- Logo PLTU Tubanan -->
+                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-2 rounded-md transition-transform hover:scale-105 duration-300 overflow-hidden">
+                    <img src="logo-pltu.png" alt="Logo PLTU Tubanan" class="max-w-full max-h-full object-contain">
                 </div>
 
-                <!-- Placeholder Logo DPRD Kudus -->
-                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-2 text-center rounded-md transition-transform hover:scale-105 duration-300">
-                    <span class="text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo DPRD<br>Kudus</span>
+                <!-- Logo DPRD Kudus -->
+                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-2 rounded-md transition-transform hover:scale-105 duration-300 overflow-hidden">
+                    <img src="logo-dprd.png" alt="Logo DPRD Kudus" class="max-w-full max-h-full object-contain">
                 </div>
             </div>
 
@@ -284,7 +262,6 @@
 
     <!-- JAVASCRIPT UNTUK LOGIKA SLIDER OTOMATIS & SLIDER INTERAKTIF MENU -->
     <script>
-        // Update tahun copyright otomatis
         document.getElementById('year').textContent = new Date().getFullYear();
 
         // 1. LOGIKA SLIDER HERO (OTOMATIS)
@@ -296,14 +273,13 @@
         function moveToNextHeroSlide() {
             currentHeroIndex++;
             if (currentHeroIndex >= totalHeroSlides) {
-                currentHeroIndex = 0; // Kembali ke slide pertama
+                currentHeroIndex = 0;
             }
             heroTrack.style.transform = `translateX(-${currentHeroIndex * 100}%)`;
         }
-        setInterval(moveToNextHeroSlide, 4000); // Berganti setiap 4 detik
+        setInterval(moveToNextHeroSlide, 4000);
 
-
-        // 2. LOGIKA SLIDER MENU INTERAKTIF (1 PRODUK DENGAN NAVIGASI)
+        // 2. LOGIKA SLIDER MENU INTERAKTIF
         const menuTrack = document.getElementById('menuTrack');
         const menuSlides = document.querySelectorAll('#menuTrack .menu-slide');
         const prevMenuBtn = document.getElementById('prevMenuBtn');
@@ -313,27 +289,21 @@
         let currentMenuIndex = 0;
         const totalMenuSlides = menuSlides.length;
 
-        // Inisialisasi Dots / Indikator Lingkaran Kecil di bawah
         for (let i = 0; i < totalMenuSlides; i++) {
             const dot = document.createElement('button');
             dot.classList.add('w-2', 'h-2', 'rounded-full', 'bg-gray-200', 'transition-all', 'duration-300', 'focus:outline-none');
             if (i === 0) {
                 dot.classList.replace('bg-gray-200', 'bg-black');
-                dot.classList.add('w-4'); // Dot aktif terlihat sedikit lebar
+                dot.classList.add('w-4');
             }
-            dot.addEventListener('click', () => {
-                goToMenuIndex(i);
-            });
+            dot.addEventListener('click', () => { goToMenuIndex(i); });
             menuDotsContainer.appendChild(dot);
         }
 
         const dots = menuDotsContainer.querySelectorAll('button');
 
         function updateMenuSlider() {
-            // Geser slide container utama menu
             menuTrack.style.transform = `translateX(-${currentMenuIndex * 100}%)`;
-            
-            // Perbarui warna indikator dot aktif
             dots.forEach((dot, index) => {
                 if (index === currentMenuIndex) {
                     dot.classList.replace('bg-gray-200', 'bg-black');
@@ -350,25 +320,19 @@
             updateMenuSlider();
         }
 
-        // Event listener klik tombol kanan (Next)
         nextMenuBtn.addEventListener('click', () => {
             currentMenuIndex++;
-            if (currentMenuIndex >= totalMenuSlides) {
-                currentMenuIndex = 0; // Balik lagi ke menu pertama
-            }
+            if (currentMenuIndex >= totalMenuSlides) { currentMenuIndex = 0; }
             updateMenuSlider();
         });
 
-        // Event listener klik tombol kiri (Prev)
         prevMenuBtn.addEventListener('click', () => {
             currentMenuIndex--;
-            if (currentMenuIndex < 0) {
-                currentMenuIndex = totalMenuSlides - 1; // Lompat ke menu terakhir
-            }
+            if (currentMenuIndex < 0) { currentMenuIndex = totalMenuSlides - 1; }
             updateMenuSlider();
         });
 
-        // Dukungan usap layar (Touch/Swipe) untuk perangkat seluler
+        // Touch/Swipe support untuk HP
         let startX = 0;
         let isSwiping = false;
 
@@ -380,21 +344,16 @@
         menuTrack.addEventListener('touchmove', (e) => {
             if (!isSwiping) return;
             const diffX = e.touches[0].clientX - startX;
-            // Jika usap ke kiri lebih dari 50px
             if (diffX < -50) {
                 nextMenuBtn.click();
                 isSwiping = false;
-            }
-            // Jika usap ke kanan lebih dari 50px
-            else if (diffX > 50) {
+            } else if (diffX > 50) {
                 prevMenuBtn.click();
                 isSwiping = false;
             }
         });
 
-        menuTrack.addEventListener('touchend', () => {
-            isSwiping = false;
-        });
+        menuTrack.addEventListener('touchend', () => { isSwiping = false; });
     </script>
 </body>
 </html>
