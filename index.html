@@ -78,22 +78,16 @@
     <section class="carousel-container">
         <div class="carousel-track" id="carouselTrack">
             <!-- Slide 1 -->
-            <div class="carousel-slide slide-1 text-gray-700">
-                <svg class="w-16 h-16 mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <h2 class="text-lg md:text-xl font-medium tracking-wide px-4">Foto Suasana Teco Utama</h2>
-                <p class="text-xs mt-2 opacity-75">(Otomatis Bergeser)</p>
+            <div class="carousel-slide p-0"> <!-- Hapus p-2 dan slide-1 -->
+                <img src="images/hero-1.jpg" alt="Suasana Cafe Teco" class="w-full h-full object-cover">
             </div>
             <!-- Slide 2 -->
-            <div class="carousel-slide slide-2 text-gray-800">
-                <svg class="w-16 h-16 mb-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <h2 class="text-lg md:text-xl font-medium tracking-wide px-4">Sudut Estetik Ruang Seduh</h2>
-                <p class="text-xs mt-2 opacity-75">(Otomatis Bergeser)</p>
+            <div class="carousel-slide p-0"> <!-- Hapus p-2 dan slide-1 -->
+                <img src="images/hero-2.jpg" alt="Sudut Estetik Ruang Seduh" class="w-full h-full object-cover">
             </div>
             <!-- Slide 3 -->
-            <div class="carousel-slide slide-3 text-white">
-                <svg class="w-16 h-16 mb-4 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <h2 class="text-lg md:text-xl font-medium tracking-wide px-4">Momen Santai Sore di Teco</h2>
-                <p class="text-xs mt-2 opacity-90">(Otomatis Bergeser)</p>
+            <div class="carousel-slide p-0"> <!-- Hapus p-2 dan slide-1 -->
+                <img src="images/hero-2.jpg" alt="Momen Santai Sore di Teco" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -114,11 +108,10 @@
                     Dengan komitmen untuk terus tumbuh bersama komunitas, Teco menyajikan pilihan rasa terbaik dalam suasana ruang minimalis modern yang ramah untuk siapa saja yang ingin sekadar bersantai maupun fokus bekerja.
                 </p>
             </div>
-            <!-- Sisi Placeholder Foto Tentang Kami -->
-            <div class="w-full h-64 md:h-80 bg-gray-100 border border-gray-200 rounded-md flex flex-col items-center justify-center p-4 text-center">
-                <svg class="w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                <span class="text-xs text-gray-400 uppercase tracking-widest font-medium">Foto Suasana Cafe Teco</span>
-            </div>
+            <!-- Kolon Kanan: Foto Tentang Kami Asli -->
+            <img src="images/tentang-kami.jpg" 
+                 alt="Suasana Estetik Cafe Teco" 
+                 class="w-full aspect-square object-cover rounded-xl shadow-md transition-transform duration-500 hover:scale-[1.02]">
         </div>
     </section>
 
@@ -141,69 +134,61 @@
             <!-- Container Slider Menu -->
             <div class="menu-slider-container">
                 <div class="menu-track" id="menuTrack">
-                    
-                    <!-- Menu Item 1 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO KOPI SUSU TECO</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Kopi Susu Teco</h3>
+
+                    <!-- Item Menu 1 -->
+                    <div class="flex flex-col items-center group">
+                        <!-- Kotak foto diganti dengan Gambar -->
+                        <img src="images/menu1.png" alt="Kopi Susu Teco" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        
+                        <h3 class="...">Kopi Susu Teco</h3>
                     </div>
 
                     <!-- Menu Item 2 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO MATCHA LATTE</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Matcha Latte</h3>
+                    <div class="flex flex-col items-center group">
+                        <!-- Kotak foto diganti dengan Gambar -->
+                        <img src="images/menu2.png" alt="Matcha Latte" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        
+                        <h3 class="...">Matcha Latte</h3>
                     </div>
 
                     <!-- Menu Item 3 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO AMERICANO</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Americano</h3>
+                    <div class="flex flex-col items-center group">
+                        <!-- Kotak foto diganti dengan Gambar -->
+                        <img src="images/menu3.png" alt="Americano" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        
+                        <h3 class="...">Americano</h3>
                     </div>
 
                     <!-- Menu Item 4 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO V60 MANUAL BREW</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">V60 Manual Brew</h3>
-                    </div>
-
-                    <!-- Menu Item 5 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO CHOCO SIGNATURE</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Choco Signature</h3>
+                    <div class="flex flex-col items-center group">
+                        <!-- Kotak foto diganti dengan Gambar -->
+                        <img src="images/menu4.png" alt="V60 Manual Brew" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        
+                        <h3 class="...">V60 Manual Brew</h3>
                     </div>
 
                     <!-- Menu Item 6 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO LYCHEE TEA</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Lychee Tea</h3>
+                    <div class="flex flex-col items-center group">
+                        <!-- Kotak foto diganti dengan Gambar -->
+                        <img src="images/menu6.png" alt="Lychee Tea" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        
+                        <h3 class="...">Lychee Tea</h3>
                     </div>
 
                     <!-- Menu Item 7 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO FRENCH FRIES</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">French Fries</h3>
+                    <div class="flex flex-col items-center group">
+                        <!-- Kotak foto diganti dengan Gambar -->
+                        <img src="images/menu7.png" alt="French Fries" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        
+                        <h3 class="...">French Fries</h3>
                     </div>
 
                     <!-- Menu Item 8 -->
-                    <div class="menu-slide flex flex-col items-center">
-                        <div class="w-full aspect-square bg-gray-100 flex items-center justify-center rounded-lg border border-gray-100 mb-4 shadow-inner">
-                            <span class="text-xs text-gray-400 text-center px-4 font-mono">FOTO TECO PLATTER</span>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 text-center uppercase tracking-wider">Teco Platter</h3>
+                    <div class="flex flex-col items-center group">
+                        <!-- Kotak foto diganti dengan Gambar -->
+                        <img src="images/menu8.png" alt="Teco Platter" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        
+                        <h3 class="...">Teco Platter</h3>
                     </div>
 
                 </div>
@@ -263,14 +248,16 @@
             
             <!-- Logo Placeholders -->
             <div class="flex flex-row items-center justify-center gap-6 md:gap-10">
-                <!-- Placeholder Logo PLTU Tubanan -->
-                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-2 text-center rounded-md transition-transform hover:scale-105 duration-300">
-                    <span class="text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo PLTU<br>Tubanan</span>
+                <!-- Logo PLTU Tubanan Asli -->
+                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-4 rounded-md transition-transform hover:scale-105 duration-300">
+                    <img src="images/logo-pltu.png" alt="Logo PLTU Tubanan" class="max-w-full max-h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="hidden text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo PLTU<br>Tubanan</span>
                 </div>
 
-                <!-- Placeholder Logo DPRD Kudus -->
-                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-2 text-center rounded-md transition-transform hover:scale-105 duration-300">
-                    <span class="text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo DPRD<br>Kudus</span>
+                <!-- Logo DPRD Kudus Asli -->
+                <div class="w-24 h-24 md:w-32 md:h-32 bg-white border border-gray-200 shadow-sm flex items-center justify-center p-4 rounded-md transition-transform hover:scale-105 duration-300">
+                    <img src="images/logo-dprd.png" alt="Logo DPRD Kudus" class="max-w-full max-h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="hidden text-xs md:text-sm font-semibold text-gray-500 leading-tight">Logo DPRD<br>Kudus</span>
                 </div>
             </div>
 
