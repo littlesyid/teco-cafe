@@ -34,11 +34,6 @@
             text-align: center;
         }
 
-        /* Varian warna placeholder agar terlihat bergeser */
-        .slide-1 { background-color: #e5e7eb; }
-        .slide-2 { background-color: #d1d5db; }
-        .slide-3 { background-color: #9ca3af; color: white !important; }
-
         /* Style Slider Menu */
         .menu-slider-container {
             position: relative;
@@ -53,10 +48,11 @@
             transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
+        /* Memastikan setiap item menu menjadi satu slide penuh */
         .menu-slide {
             min-width: 100%;
             box-sizing: border-box;
-            padding: 10px;
+            padding: 16px;
         }
     </style>
 </head>
@@ -78,16 +74,16 @@
     <section class="carousel-container">
         <div class="carousel-track" id="carouselTrack">
             <!-- Slide 1 -->
-            <div class="carousel-slide p-0"> <!-- Hapus p-2 dan slide-1 -->
+            <div class="carousel-slide p-0">
                 <img src="images/hero-1.jpg" alt="Suasana Cafe Teco" class="w-full h-full object-cover">
             </div>
             <!-- Slide 2 -->
-            <div class="carousel-slide p-0"> <!-- Hapus p-2 dan slide-1 -->
+            <div class="carousel-slide p-0">
                 <img src="images/hero-2.jpg" alt="Sudut Estetik Ruang Seduh" class="w-full h-full object-cover">
             </div>
             <!-- Slide 3 -->
-            <div class="carousel-slide p-0"> <!-- Hapus p-2 dan slide-1 -->
-                <img src="images/hero-2.jpg" alt="Momen Santai Sore di Teco" class="w-full h-full object-cover">
+            <div class="carousel-slide p-0">
+                <img src="images/hero-3.jpg" alt="Momen Santai Sore di Teco" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -136,59 +132,45 @@
                 <div class="menu-track" id="menuTrack">
 
                     <!-- Item Menu 1 -->
-                    <div class="flex flex-col items-center group">
-                        <!-- Kotak foto diganti dengan Gambar -->
+                    <div class="menu-slide flex flex-col items-center group">
                         <img src="images/menu1.png" alt="Kopi Susu Teco" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        
-                        <h3 class="...">Kopi Susu Teco</h3>
+                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Kopi Susu Teco</h3>
                     </div>
 
                     <!-- Menu Item 2 -->
-                    <div class="flex flex-col items-center group">
-                        <!-- Kotak foto diganti dengan Gambar -->
+                    <div class="menu-slide flex flex-col items-center group">
                         <img src="images/menu2.png" alt="Matcha Latte" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        
-                        <h3 class="...">Matcha Latte</h3>
+                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Matcha Latte</h3>
                     </div>
 
                     <!-- Menu Item 3 -->
-                    <div class="flex flex-col items-center group">
-                        <!-- Kotak foto diganti dengan Gambar -->
+                    <div class="menu-slide flex flex-col items-center group">
                         <img src="images/menu3.png" alt="Americano" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        
-                        <h3 class="...">Americano</h3>
+                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Americano</h3>
                     </div>
 
                     <!-- Menu Item 4 -->
-                    <div class="flex flex-col items-center group">
-                        <!-- Kotak foto diganti dengan Gambar -->
+                    <div class="menu-slide flex flex-col items-center group">
                         <img src="images/menu4.png" alt="V60 Manual Brew" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        
-                        <h3 class="...">V60 Manual Brew</h3>
+                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">V60 Manual Brew</h3>
                     </div>
 
                     <!-- Menu Item 6 -->
-                    <div class="flex flex-col items-center group">
-                        <!-- Kotak foto diganti dengan Gambar -->
+                    <div class="menu-slide flex flex-col items-center group">
                         <img src="images/menu6.png" alt="Lychee Tea" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        
-                        <h3 class="...">Lychee Tea</h3>
+                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Lychee Tea</h3>
                     </div>
 
                     <!-- Menu Item 7 -->
-                    <div class="flex flex-col items-center group">
-                        <!-- Kotak foto diganti dengan Gambar -->
+                    <div class="menu-slide flex flex-col items-center group">
                         <img src="images/menu7.png" alt="French Fries" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        
-                        <h3 class="...">French Fries</h3>
+                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">French Fries</h3>
                     </div>
 
                     <!-- Menu Item 8 -->
-                    <div class="flex flex-col items-center group">
-                        <!-- Kotak foto diganti dengan Gambar -->
+                    <div class="menu-slide flex flex-col items-center group">
                         <img src="images/menu8.png" alt="Teco Platter" class="w-full aspect-square object-cover mb-4 rounded-md shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        
-                        <h3 class="...">Teco Platter</h3>
+                        <h3 class="text-sm md:text-base font-semibold text-gray-800 text-center uppercase tracking-wide">Teco Platter</h3>
                     </div>
 
                 </div>
@@ -206,7 +188,7 @@
         </div>
     </section>
 
-    <!-- SECTION HUBUNGI KAMI (SUDAH DIPERBAIKI) -->
+    <!-- SECTION HUBUNGI KAMI -->
     <section class="max-w-5xl mx-auto px-6 py-16 text-center">
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-3xl font-bold tracking-widest uppercase text-black">Hubungi Kami</h2>
@@ -216,23 +198,20 @@
         <!-- Container Tombol Kontak -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             
-            <!-- Tombol WhatsApp (Presisi) -->
+            <!-- Tombol WhatsApp -->
             <a href="https://wa.me/6283144202166" target="_blank" class="flex items-center gap-4 p-5 border border-gray-200 rounded-xl hover:shadow-md transition-all bg-white text-left group">
-                <!-- ICON WRAPPER: Memaksa ikon tepat di tengah secara vertikal & horizontal -->
                 <div class="flex items-center justify-center w-8 h-8 flex-shrink-0 text-slate-800">
-                    <!-- SVG WhatsApp yang sudah dibersihkan posisinya -->
                     <svg class="w-7 h-7 transition-transform group-hover:scale-110 duration-300" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                     </svg>
                 </div>
-                <!-- TEXT WRAPPER: Mengatur jarak antar baris teks agar seimbang -->
                 <div class="flex flex-col justify-center">
                     <span class="text-[10px] md:text-xs font-semibold text-gray-400 tracking-wider uppercase leading-none mb-1">Tanya Lewat WhatsApp</span>
                     <span class="text-sm md:text-base font-bold text-gray-800 leading-tight">+62 831-4420-2166</span>
                 </div>
             </a>
     
-            <!-- Tombol Instagram (Presisi) -->
+            <!-- Tombol Instagram -->
             <a href="https://instagram.com/tecocafe.id" target="_blank" class="flex items-center gap-4 p-5 border border-gray-200 rounded-xl hover:shadow-md transition-all bg-white text-left group">
                 <div class="flex items-center justify-center w-8 h-8 flex-shrink-0 text-slate-800">
                     <svg class="w-7 h-7 transition-transform group-hover:scale-110 duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -293,11 +272,11 @@
         function moveToNextHeroSlide() {
             currentHeroIndex++;
             if (currentHeroIndex >= totalHeroSlides) {
-                currentHeroIndex = 0; // Kembali ke slide pertama
+                currentHeroIndex = 0;
             }
             heroTrack.style.transform = `translateX(-${currentHeroIndex * 100}%)`;
         }
-        setInterval(moveToNextHeroSlide, 4000); // Berganti setiap 4 detik
+        setInterval(moveToNextHeroSlide, 4000);
 
 
         // 2. LOGIKA SLIDER MENU INTERAKTIF (1 PRODUK DENGAN NAVIGASI)
@@ -316,7 +295,7 @@
             dot.classList.add('w-2', 'h-2', 'rounded-full', 'bg-gray-200', 'transition-all', 'duration-300', 'focus:outline-none');
             if (i === 0) {
                 dot.classList.replace('bg-gray-200', 'bg-black');
-                dot.classList.add('w-4'); // Dot aktif terlihat sedikit lebar
+                dot.classList.add('w-4');
             }
             dot.addEventListener('click', () => {
                 goToMenuIndex(i);
@@ -327,10 +306,8 @@
         const dots = menuDotsContainer.querySelectorAll('button');
 
         function updateMenuSlider() {
-            // Geser slide container utama menu
             menuTrack.style.transform = `translateX(-${currentMenuIndex * 100}%)`;
             
-            // Perbarui warna indikator dot aktif
             dots.forEach((dot, index) => {
                 if (index === currentMenuIndex) {
                     dot.classList.replace('bg-gray-200', 'bg-black');
@@ -347,20 +324,18 @@
             updateMenuSlider();
         }
 
-        // Event listener klik tombol kanan (Next)
         nextMenuBtn.addEventListener('click', () => {
             currentMenuIndex++;
             if (currentMenuIndex >= totalMenuSlides) {
-                currentMenuIndex = 0; // Balik lagi ke menu pertama
+                currentMenuIndex = 0;
             }
             updateMenuSlider();
         });
 
-        // Event listener klik tombol kiri (Prev)
         prevMenuBtn.addEventListener('click', () => {
             currentMenuIndex--;
             if (currentMenuIndex < 0) {
-                currentMenuIndex = totalMenuSlides - 1; // Lompat ke menu terakhir
+                currentMenuIndex = totalMenuSlides - 1;
             }
             updateMenuSlider();
         });
@@ -377,12 +352,10 @@
         menuTrack.addEventListener('touchmove', (e) => {
             if (!isSwiping) return;
             const diffX = e.touches[0].clientX - startX;
-            // Jika usap ke kiri lebih dari 50px
             if (diffX < -50) {
                 nextMenuBtn.click();
                 isSwiping = false;
             }
-            // Jika usap ke kanan lebih dari 50px
             else if (diffX > 50) {
                 prevMenuBtn.click();
                 isSwiping = false;
